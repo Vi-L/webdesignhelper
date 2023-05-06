@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/pen.svg"/>
+    
+    <!-- import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fjalla+One&family=Lobster+Two&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <title>Web Design Helper</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script type="module" src="./jsfiles/home.js" defer></script>
+    
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- import bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html" style="font-family: 'Lobster Two', cursive;">Web Design Helper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/pages/texts.html" style="font-family: 'Comfortaa', cursive;">Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/images.html" style="font-family: 'Comfortaa', cursive;">Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/resources.html" style="font-family: 'Comfortaa', cursive;">Resources & Cheatsheets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="home-parallax"></div>
+    <div class="home-content">
+      <div class="home-child">
+        <i class="far fa-file-code fa-6x"></i>
+        <h3 style="font-family: 'Fjalla One', sans-serif;">There is a large variety of different resources that can be used to help you create your perfect website.</h3>
+        <p style="font-family: 'Merriweather', serif;">
+          This website offers a collection of useful resources and a simple, clickable interface 
+          to help you find the tools you want for designing your website's text and images. 
+          It also includes links to documentation and cheatsheets for commonly used frameworks and libraries.
+          Happy coding! <i class="fas fa-laptop-code"></i>
+        </p>
+      </div>
+      <div class="home-child">
+        <h5>"I need..."</h5>
+        <ul class="home-ul">
+          <li><a href="/pages/texts.html" class="home-a">tools for text</a></li>
+          <li><a href="/pages/images.html" class="home-a">tools for images</a></li>
+          <li><a href="/pages/resources.html" class="home-a">documentation and cheatsheets</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <div class="quick-container">
+      <h5>
+        Just need to quickly get a placeholder image or lorem ipsum text?  Use the forms below!
+      </h5>
+      <div class="quick-forms-container">
+        <form class="quick-text-form">
+          <div>
+            <h6 class="inlineblock-el">Use the </h6> 
+            <a class="inlineblock-el" href="https://baconipsum.com/json-api/">Bacon Ipsum API</a> 
+            <h6 class="inlineblock-el">for text</h6>
+          </div>
+          <div>
+            <label style="font-style: italic;">All meat words, or meat and filler words: </label>
+            <input type="radio" id="all-meat-radio" name="text-type" value="all-meat" checked><label for="all-meat">All meat</label>
+            <input type="radio" id="meat-filler-radio" name="text-type" value="meat-and-filler"><label for="meat-and-filler">Meat and filler</label>
+          </div>
+          <div>
+            <label style="font-style: italic;">Number of paragraphs (1 - 10): </label>
+            <input type="number" id="para-num" min="1" max="10" value="1">
+          </div>
+          <button type="submit" class="submit-button">
+            Submit
+          </button>
+          <button id="text-copy-button" type="button" class="copy-button">
+            Copy to clipboard
+          </button>
+        </form>
+        
+        <form class="quick-image-form">
+          <div>
+            <h6 class="inlineblock-el">Use </h6>
+            <a class="inlineblock-el" href="https://picsum.photos/">Lorem Picsum</a>
+            <h6 class="inlineblock-el"> for images</h6>
+          </div>
+          <div>
+            <label style="font-style: italic;">Width: </label>
+            <input type="number" id="width-num" max="2000">
+          </div>
+          <div>
+            <label style="font-style: italic;">Height: </label>
+            <input type="number" id="height-num" max="2000">
+          </div>
+          <button type="submit" class="submit-button">
+            Submit
+          </button>
+          <button id="image-copy-button" type="button" class="copy-button">
+            Copy to clipboard
+          </button>
+        </form>
+      </div>
+      <div class="quick-content">
+        
+      </div>
+    </div>
+    
+  </body>
+</html>

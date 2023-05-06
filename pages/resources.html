@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15/svgs/solid/pen.svg"/>
+
+    <title>Web Design Helper</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    
+    <!-- import google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Fjalla+One&family=Lobster+Two&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <!-- import the webpage's javascript file -->
+    <script src="../jsfiles/resources.js" defer></script>
+    
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!-- import bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <nav class="navbar nav-tabs navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html" style="font-family: 'Lobster Two', cursive;">Web Design Helper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/pages/texts.html" style="font-family: 'Comfortaa', cursive;">Text</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/images.html" style="font-family: 'Comfortaa', cursive;">Image</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pages/resources.html" style="font-family: 'Comfortaa', cursive;">Resources & Cheatsheets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="resources-container">
+      <table>
+        <tr>
+          <th class="table-cell">Title</th>
+          <th class="table-cell">Type</th>
+          <th class="table-cell">Link</th>
+        </tr>
+        <tr>
+          <td class="table-cell">Bootstrap 5.1 Docs</td>
+          <td class="table-cell">Documentation</td>
+          <td class="table-cell"><a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">https://getbootstrap.com/docs/5.1/getting-started/introduction/</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">React.js Docs</td>
+          <td class="table-cell">Documentation</td>
+          <td class="table-cell"><a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">Node.js Docs</td>
+          <td class="table-cell">Documentation</td>
+          <td class="table-cell"><a href="https://nodejs.org/en/docs/">https://nodejs.org/en/docs/</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">MDN Web Docs: HTML</td>
+          <td class="table-cell">Reference</td>
+          <td class="table-cell"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference">https://developer.mozilla.org/en-US/docs/Web/HTML/Reference</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">MDN Web Docs: CSS</td>
+          <td class="table-cell">Reference</td>
+          <td class="table-cell"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">MDN Web Docs: Javascript</td>
+          <td class="table-cell">Reference</td>
+          <td class="table-cell"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">HTML Cheat Sheet</td>
+          <td class="table-cell">Cheatsheet</td>
+          <td class="table-cell"><a href="https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf">https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">CSS Cheat Sheet</td>
+          <td class="table-cell">Cheatsheet</td>
+          <td class="table-cell"><a href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf">https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">Javascript Cheat Sheet</td>
+          <td class="table-cell">Cheatsheet</td>
+          <td class="table-cell"><a href="https://overapi.com/javascript">https://overapi.com/javascript</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">Front-end Cheatsheets</td>
+          <td class="table-cell">Cheatsheet</td>
+          <td class="table-cell"><a href="https://www.frontendcheatsheets.com/">https://www.frontendcheatsheets.com/</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">W3Schools</td>
+          <td class="table-cell">Other</td>
+          <td class="table-cell"><a href="https://www.w3schools.com/">https://www.w3schools.com/</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">FreeCodeCamp</td>
+          <td class="table-cell">Other</td>
+          <td class="table-cell"><a href="https://www.freecodecamp.org/">https://www.freecodecamp.org/</a></td>
+        </tr>
+        <tr>
+          <td class="table-cell">Stack Overflow</td>
+          <td class="table-cell">Other</td>
+          <td class="table-cell"><a href="https://stackoverflow.com/">https://stackoverflow.com/</a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 
+table row template:
+    <tr>
+          <td class="table-cell">a</td>
+          <td class="table-cell">Documentation</td>
+          <td class="table-cell"><a href="">c</a></td>
+        </tr>
+-->
+    
+  </body>
+</html>
